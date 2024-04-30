@@ -6,6 +6,18 @@ menu.addEventListener('click', function() {
   menuLinks.classList.toggle('active');
 });
 
+menuLinks.forEach(link => {
+
+  link.addEventListener('click', () => {
+    if (menu.classList.contains('is-active')) {
+      menu.classList.remove('is-active');
+      menuLinks.classList.remove('active'); 
+    }
+
+  });
+
+});
+
 const openButton = document.querySelector('[data-open-modal]');
 const closeButton = document.querySelector('[data-close-modal]');
 const modal = document.querySelector('[data-modal]');
