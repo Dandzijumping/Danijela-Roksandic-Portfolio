@@ -495,6 +495,7 @@ transition: all 0.3s ease;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
+
 .about__heading span {
     background: #ee0979; 
     background-image: var(--crl-gradient_title);
@@ -543,6 +544,12 @@ transition: all 0.3s ease;
 .about__content p {
     margin-top: 1rem;
     font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--clr-body_text);
+}
+.parkingtime-page .about__content p {
+    margin-top: 1rem;
+    font-size: 20px;
     font-weight: 400;
     color: var(--clr-body_text);
 }
@@ -651,6 +658,169 @@ transition: all 0.3s ease;
         margin-top: 1rem;
     }
 }
+
+/* Current Challenges */
+
+.challenges{
+    background-color: var(--clr-background);
+    padding: 0 32px 40px 32px;
+}
+.challenges__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: auto;
+    background-color: var(--crl-white_background);
+    border-radius: 1rem;
+   filter: drop-shadow(0px 4px 4px rgba(83, 82, 82, 0.25));
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 25px 50px;
+}
+#challenges .challenges__container:nth-child(2) {
+
+    background-color: var(--clr-background); 
+    padding: 20px;}
+
+.challenges__content {
+    padding: 20px;
+}
+
+
+.challenges .challenges__heading--section h1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-stretch: ultra-condensed;
+    background-color: var(--clr-background);
+    background-color: #ee0979;
+    background-image: var(--crl-gradient_title);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.challenges__content h2 {
+    font-size: 1.5rem;
+   color: #95979A;
+  }
+
+  .challenges__content h3 {
+    font-size: 2rem;
+    color: var(--clr-titles);
+    max-width: 370px;
+  }
+
+.challenges__content p {
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-body_text);
+    max-width: 500px;
+}
+
+.challenges__img--container img {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 20px;
+}
+#challenges__img {
+    height: 525px;
+    width: 400px;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width:768px) {
+    
+    .challenges__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .challenges__content {
+        text-align: center;
+        margin-bottom: 4rem;
+        margin: 0 auto;
+    }
+
+    .challenges .challenges__heading--section h1 {
+        display: flex;
+       flex-direction: column;
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .challenges__content h1 {
+        font-size: 2rem;
+    }
+    .challenges__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .challenges__content h3 {
+        font-size: 1.5rem;
+        
+    }
+    .challenges__content p {
+        margin-top: 0.75rem;
+        font-size: 1rem;
+    }
+    .challenges__img--container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .challenges__img--container img {
+        
+    }
+    .challenges__container:not(:first-child) {
+        margin: top 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .challenges__content h1 {
+        font-size: 2rem;
+    }
+    .challenges__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .challenges__content h3 {
+        font-size: 1.5rem;
+    }
+    .challenges__content p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    .challenges__img--container img {
+        
+    }
+}
+
+
 
 /* Expertise and Skills */
 
@@ -1420,7 +1590,6 @@ transition: all 0.3s ease;
     }
 
   }
-
 
 
 
